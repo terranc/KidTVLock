@@ -2,6 +2,32 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.2.0] - 2026-06-08
+
+### Added
+- Offline temporary unlock functionality with phone binding QR code
+- 8-digit directional temporary passcode mode (30min and 60min duration options)
+- Temporary passcode verification with time-window tolerance (5-min windows, ±1 drift)
+- Automatic re-lock scheduling when temporary unlock expires
+- Arrow direction display in temporary passcode mode for input verification
+- Multi-language support (English, Simplified Chinese, Traditional Chinese)
+- Trellis workflow integration for consistent development process
+- Test scripts for fetching binding information from TV
+
+### Changed
+- Debug builds use 3-minute temporary unlock duration for faster testing
+- Improved thread safety in password attempt tracking (commit() instead of apply())
+- Added Android 12+ exact alarm permission check for re-lock scheduling
+
+### Fixed
+- Resolved build errors from worktree merge (missing strings, unresolved references)
+- Fixed temporary unlock API inconsistencies between Python script and TV app
+- Corrected test expectations to match actual UI behavior and string resources
+
+### Security
+- Added error handling for PasswordManager creation failures
+- Implemented fallback for AlarmManager scheduling without exact alarm permission
+
 ## [0.1.1] - 2026-06-07
 
 ### Added
