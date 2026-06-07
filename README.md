@@ -12,7 +12,7 @@ An Android TV parental control app that locks the TV behind a directional-pad pa
 - **Overlay lock** — displays a full-screen overlay on top of any app, works even when launched via the app list
 - **Password shake feedback** — a shake animation on wrong password entry gives clear visual feedback
 - **App update checking** — detects new versions and prompts for in-app download and installation
-- **QR code for phone binding** — (coming soon) scan a QR code with your phone to manage the lock remotely
+- **QR code for phone binding** — scan a QR code with your phone to generate temporary unlock codes (30min or 60min)
 - **Self-start permission guide** — walks you through granting the auto-start and overlay permissions required for reliable locking
 
 ## How It Works
