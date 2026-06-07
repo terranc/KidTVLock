@@ -1,49 +1,32 @@
-# KidTVLock Releases
+# 童视锁 (KidTvLock)
+<img width="160" height="160" alt="ChatGPT Image 2026年6月7日 02_55_51 (1)" src="https://github.com/user-attachments/assets/66330bdc-a279-449b-8368-cd9244997636" />
 
-> **Note**: This repository contains release assets only. The source code is maintained at [KidTV-Lock](https://github.com/terranc/KidTV-Lock).
+[English](README.md) · [简体中文](README-zh.md) · [繁體中文](README-zh-TW.md)
 
-## 童视锁 (KidTVLock)
+An Android TV parental control app that locks the TV behind a directional-pad passcode, preventing unsupervised watching. Works on Android TV and TV boxes with a remote control — no touchscreen required.
 
-6-digit D-pad directional password lock for Android TV.
+## Features
 
-### Download
+- **6-digit D-pad password** — set and enter your passcode using only the remote's directional keys (Up/Down/Left/Right)
+- **Auto-lock on boot & wake** — locks the screen automatically when the TV powers on or wakes from sleep
+- **Overlay lock** — displays a full-screen overlay on top of any app, works even when launched via the app list
+- **Password shake feedback** — a shake animation on wrong password entry gives clear visual feedback
+- **App update checking** — detects new versions and prompts for in-app download and installation
+- **QR code for phone binding** — (coming soon) scan a QR code with your phone to manage the lock remotely
+- **Self-start permission guide** — walks you through granting the auto-start and overlay permissions required for reliable locking
 
-Download the latest APK from [Releases](https://github.com/terranc/KidTVLock/releases).
+## How It Works
 
-### Features
+1. Install the APK on your Android TV or TV box
+2. Open the app and follow the setup guide to grant **auto-start** and **overlay display** permissions
+3. Set a 6-directional passcode using the remote's D-pad
+4. The next time the TV boots or wakes, you'll see the lock screen — enter the passcode to unlock
 
-- 6-digit D-pad directional password lock for Android TV
-- Auto-lock on device boot and screen wake
-- Full-screen overlay lock service
-- Password setup wizard with confirmation flow
-- Change-password and reset-password flows
-- App update checker with download prompt
+## Requirements
 
-### Source Code
+- Android TV or TV box with a D-pad remote control
+- Android 5.0 or later
 
-The full source code, issue tracking, and development documentation are available at:
-**https://github.com/terranc/KidTV-Lock**
+## License
 
----
-
-## 童视锁
-
-Android TV 六位方向键密码锁应用。
-
-### 下载
-
-从 [Releases](https://github.com/terranc/KidTVLock/releases) 下载最新 APK。
-
-### 功能特性
-
-- Android TV 六位方向键密码锁
-- 开机及唤醒自动锁屏
-- 全屏覆盖锁屏服务
-- 密码设置向导与确认流程
-- 修改密码与重置密码功能
-- 应用更新检测与下载提示
-
-### 源代码
-
-完整源代码、问题跟踪和开发文档请访问：
-**https://github.com/terranc/KidTV-Lock**
+Proprietary. All rights reserved.
