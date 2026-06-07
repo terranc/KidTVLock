@@ -2,6 +2,19 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.1.1] - 2026-06-07
+
+### Added
+- TV vendor autostart settings support for broader device compatibility
+
+### Changed
+- Updated target SDK and tests
+- Signing config updated with JKS keystore format
+
+### Fixed
+- Converted QR sample to valid PNG format
+- Disabled ExpiredTargetSdkVersion lint for side-loaded APK distribution
+
 ## [0.1.0] - 2026-06-07
 
 ### Added
