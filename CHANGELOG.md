@@ -2,6 +2,11 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.2.2] - 2026-06-10
+
+### Changed
+- Update lock service domain URLs
+
 ## [0.2.1] - 2026-06-09
 
 ### Changed
