@@ -2,6 +2,14 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.2.1] - 2026-06-09
+
+### Changed
+- Convert WakeEventMonitorService to a foreground service for improved reliability
+
+### Fixed
+- Minor documentation updates
+
 ## [0.2.0] - 2026-06-08
 
 ### Added
