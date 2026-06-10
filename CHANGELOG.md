@@ -2,6 +2,15 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.2.3] - 2026-06-10
+
+### Changed
+- Use foreground service startup for wake monitor to improve reliability
+
+### Fixed
+- Restore normal debug build temporary unlock duration (3 minutes)
+- Fix password leave recovery behavior
+
 ## [0.2.2] - 2026-06-10
 
 ### Changed
