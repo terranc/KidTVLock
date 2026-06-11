@@ -18,14 +18,14 @@ Android TV 家長控制應用，使用方向鍵密碼鎖定電視，防止孩子
 
 ## 使用方法
 
-1. 在 Android TV 或電視盒子上安裝 APK（不知道如何安裝應用？讓 [豆包](https://www.doubao.com/chat/url-action?action=%7B%22pluginId%22%3A%22Send_Message%22%2C%22payload%22%3A%7B%22text%22%3A%22%E6%99%BA%E8%83%BD%E7%94%B5%E8%A7%86%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85%20APK%22%7D%7D) 指導你）
+1. 在 Android TV 或電視盒子上安裝 APK（不知道如何安裝應用？讓 [ChatGPT](https://chatgpt.com/?q=%E6%99%BA%E8%83%BD%E7%94%B5%E8%A7%86%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85%20APK) 指導你）
 2. 開啟應用，按照引導授予**自啟動**和**懸浮窗顯示**權限
 3. 使用遙控器方向鍵設定 6 位方向密碼
 4. 下次電視開機或喚醒時，將看到鎖定畫面——輸入密碼即可解鎖
 
 ## 可選防卸載模式
 
-如果想避免 App 被偷偷卸載而繞過鎖定限制。有動手能力、可以用電腦做一次設定的你，可以透過 ADB 開啟防卸載模式。操作前請先確保電腦已經安裝 Android Platform Tools，並且終端機裡可以執行 `adb` 指令。不會安裝的話，可以讓 [豆包](https://www.doubao.com/chat/url-action?action=%7B%22pluginId%22%3A%22Send_Message%22%2C%22payload%22%3A%7B%22text%22%3A%22%E8%AB%8B%E4%B8%80%E6%AD%A5%E6%AD%A5%E6%95%99%E6%88%91%E5%9C%A8%E9%9B%BB%E8%85%A6%E4%B8%8A%E5%AE%89%E8%A3%9D%20Android%20Platform%20Tools%EF%BC%8C%E4%B8%A6%E7%A2%BA%E8%AA%8D%20adb%20%E6%8C%87%E4%BB%A4%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E3%80%82%22%7D%7D) 一步步指導安裝。
+如果想避免 App 被偷偷卸載而繞過鎖定限制。有動手能力、可以用電腦做一次設定的你，可以透過 ADB 開啟防卸載模式。操作前請先確保電腦已經安裝 Android Platform Tools，並且終端機裡可以執行 `adb` 指令。不會安裝的話，可以讓 [ChatGPT](https://chatgpt.com/?q=%E8%AB%8B%E4%B8%80%E6%AD%A5%E6%AD%A5%E6%95%99%E6%88%91%E5%9C%A8%E9%9B%BB%E8%85%A6%E4%B8%8A%E5%AE%89%E8%A3%9D%20Android%20Platform%20Tools%EF%BC%8C%E4%B8%A6%E7%A2%BA%E8%AA%8D%20adb%20%E6%8C%87%E4%BB%A4%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E3%80%82) 一步步指導安裝。
 
 操作步驟：
 
