@@ -2,6 +2,16 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.2.4] - 2026-06-12
+
+### Added
+- Add optional uninstall protection for ADB-managed Device Owner installations
+- Add a QR page action to disable uninstall protection after permanent password verification
+
+### Changed
+- Expand README guidance for enabling, verifying, and removing uninstall protection
+- Document Android Platform Tools setup help and multi-device ADB command usage
+
 ## [0.2.3] - 2026-06-10
 
 ### Changed
