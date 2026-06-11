@@ -17,14 +17,14 @@ An Android TV parental control app that locks the TV behind a directional-pad pa
 
 ## How It Works
 
-1. [Download the latest APK](https://github.com/terranc/KidTVLock/releases/latest) and install on your Android TV or TV box (not sure how? let [ChatGPT](https://chatgpt.com/?q=How%20to%20install%20APK%20on%20Android%20TV) or [Doubao](https://www.doubao.com/chat/url-action?action=%7B%22pluginId%22%3A%22Send_Message%22%2C%22payload%22%3A%7B%22text%22%3A%22How%20to%20install%20APK%20on%20Android%20TV%22%7D%7D) guide you)
+1. [Download the latest APK](https://github.com/terranc/KidTVLock/releases/latest) and install on your Android TV or TV box (not sure how? let [ChatGPT](https://chatgpt.com/?q=How%20to%20install%20APK%20on%20Android%20TV) guide you)
 2. Open the app and follow the setup guide to grant **auto-start** and **overlay display** permissions
 3. Set a 6-directional passcode using the remote's D-pad
 4. The next time the TV boots or wakes, you'll see the lock screen — enter the passcode to unlock
 
 ## Optional Uninstall Protection
 
-If you want to prevent the app from being secretly uninstalled to bypass the lock, users who can do a one-time computer setup can enable uninstall protection with ADB. Before starting, install Android Platform Tools on your computer and make sure the `adb` command is available in your terminal. Need help installing it? Ask [ChatGPT](https://chatgpt.com/?q=Show%20me%20step%20by%20step%20how%20to%20install%20Android%20Platform%20Tools%20on%20my%20computer%20and%20verify%20that%20the%20adb%20command%20works.) or [Doubao](https://www.doubao.com/chat/url-action?action=%7B%22pluginId%22%3A%22Send_Message%22%2C%22payload%22%3A%7B%22text%22%3A%22Show%20me%20step%20by%20step%20how%20to%20install%20Android%20Platform%20Tools%20on%20my%20computer%20and%20verify%20that%20the%20adb%20command%20works.%22%7D%7D) for step-by-step guidance.
+If you want to prevent the app from being secretly uninstalled to bypass the lock, users who can do a one-time computer setup can enable uninstall protection with ADB. Before starting, install Android Platform Tools on your computer and make sure the `adb` command is available in your terminal. Need help installing it? Ask [ChatGPT](https://chatgpt.com/?q=Show%20me%20step%20by%20step%20how%20to%20install%20Android%20Platform%20Tools%20on%20my%20computer%20and%20verify%20that%20the%20adb%20command%20works.) for step-by-step guidance.
 
 Steps:
 
