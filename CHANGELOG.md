@@ -2,6 +2,16 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.2.6] - 2026-06-12
+
+### Added
+- Integrate Umeng SDK for analytics, push notifications, and APM monitoring
+- Add Umeng push services and receivers in Android manifest
+- Add ProGuard rules to keep Umeng SDK classes
+
+### Changed
+- Reorganize Trellis development skills across agent platforms
+
 ## [0.2.5] - 2026-06-12
 
 ### Changed
