@@ -2,6 +2,16 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.2.5] - 2026-06-12
+
+### Changed
+- Update release sync guidance and installation guide links in documentation
+- Clarify AI translation tool links for English, Simplified Chinese, and Traditional Chinese
+
+### Fixed
+- Show the guide screen immediately after password verification without waiting for update checks
+- Load the phone binding QR code asynchronously after the guide screen opens
+
 ## [0.2.4] - 2026-06-12
 
 ### Added
