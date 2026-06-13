@@ -2,6 +2,21 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.2.7] - 2026-06-13
+
+### Added
+- Phone binding QR code now fully functional with real QR generation
+- NDK ABI filters to reduce APK size (armeabi-v7a, arm64-v8a, armeabi)
+
+### Changed
+- Enable resource shrinking for release builds
+- Replace PNG launcher assets with WebP format for smaller APK
+- Update English QR binding prompt text
+
+### Removed
+- "Coming soon" placeholder text and overlay for QR code
+- Unused bools.xml resource files
+
 ## [0.2.6] - 2026-06-12
 
 ### Added
