@@ -9,16 +9,16 @@ An Android TV parental control app that locks the TV behind a directional-pad pa
 
 - **6-digit D-pad password** — set and enter your passcode using only the remote's directional keys (Up/Down/Left/Right)
 - **Auto-lock on boot & wake** — locks the screen automatically when the TV powers on or wakes from sleep
-- **Overlay lock** — displays a full-screen overlay on top of any app, works even when launched via the app list
+- **Full-screen lock** — takes over the screen when the TV turns on or wakes, preventing access without the passcode
 - **Password shake feedback** — a shake animation on wrong password entry gives clear visual feedback
 - **App update checking** — detects new versions and prompts for in-app download and installation
 - **QR code for phone binding** — scan a QR code with your phone to generate temporary unlock codes (30min or 60min)
-- **Self-start permission guide** — walks you through granting the auto-start and overlay permissions required for reliable locking
+- **Setup guide** — walks you through the permission setup for reliable locking
 
 ## How It Works
 
 1. [Download the latest APK](https://github.com/terranc/KidTVLock/releases/latest) and install on your Android TV or TV box (not sure how? let [ChatGPT](https://chatgpt.com/?q=How%20to%20install%20APK%20on%20Android%20TV) guide you)
-2. Open the app and follow the setup guide to grant **auto-start** and **overlay display** permissions
+2. Open the app and follow the setup guide to grant the necessary permissions
 3. Set a 6-directional passcode using the remote's D-pad
 4. The next time the TV boots or wakes, you'll see the lock screen — enter the passcode to unlock
 
