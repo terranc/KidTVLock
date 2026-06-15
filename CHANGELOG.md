@@ -2,6 +2,23 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.3.0] - 2026-06-16
+
+### Added
+- Default HOME gate mode for improved Xiaomi TV compatibility (detects and blocks default launcher)
+- Navigator and PasswordManager APIs for extensible launcher integration
+- Real launcher selection flow with vendor-specific auto-start settings
+
+### Changed
+- Refined unlock session handling for better reliability across TV vendors
+
+### Fixed
+- Passcode dot drawables now render consistently across devices (added `<size>` attribute)
+- Fixed QR code crash on older Android TV devices when entering guide page
+
+### Removed
+- Umeng push notification SDK (TV devices don't require push functionality)
+
 ## [0.2.7] - 2026-06-13
 
 ### Added
