@@ -2,6 +2,15 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.3.1] - 2026-06-16
+
+### Added
+- Accessibility relock for temporary unlock expiry (triggers relock via accessibility service when alarm fires)
+- Route relock through HOME gate for improved compatibility
+
+### Changed
+- Refined temporary unlock relock scheduling logic
+
 ## [0.3.0] - 2026-06-16
 
 ### Added
