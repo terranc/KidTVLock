@@ -2,6 +2,11 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.3.3] - 2026-06-16
+
+### Added
+- Delayed HOME candidate activation via activity-alias (avoids HOME chooser popup on fresh install)
+
 ## [0.3.2] - 2026-06-16
 
 ### Changed
