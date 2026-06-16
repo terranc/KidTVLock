@@ -2,6 +2,11 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.3.2] - 2026-06-16
+
+### Changed
+- Retry launcher detection after saved component fails for improved reliability
+
 ## [0.3.1] - 2026-06-16
 
 ### Added
