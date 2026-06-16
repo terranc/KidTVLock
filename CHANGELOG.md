@@ -2,6 +2,23 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.3.4] - 2026-06-17
+
+### Changed
+- Redesigned guide screen: widened the primary action button and grouped the two
+  secondary buttons (limited viewing / disable uninstall protection) into a compact
+  side-by-side row for a clearer visual hierarchy
+- Renamed the accessibility action to "开启限时观看" with a "通过无障碍功能实现" caption below
+- Moved the version label to the bottom-left corner of the screen
+
+### Fixed
+- Accessibility button is no longer wrongly hidden on ROMs that mis-report the settings
+  intent as unavailable (e.g. Xiaomi TV); it now always shows and verifies on click
+
+### Added
+- Report device info via Umeng custom event when accessibility settings cannot be opened,
+  to help diagnose ROM compatibility
+
 ## [0.3.3] - 2026-06-16
 
 ### Added
