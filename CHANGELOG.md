@@ -2,6 +2,17 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.3.5] - 2026-06-18
+
+### Fixed
+- Fixed Umeng custom event reporting for accessibility settings failures by using
+  object-style event parameters and normal analytics scenario/lifecycle hooks
+- Added realtime debug deep-link handling for Umeng integration testing
+
+### Changed
+- Added debug-only guide button reporting to verify the custom event pipeline without
+  affecting release builds
+
 ## [0.3.4] - 2026-06-17
 
 ### Changed
