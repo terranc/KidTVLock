@@ -2,6 +2,17 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.3.6] - 2026-06-19
+
+### Fixed
+- Update the limited viewing accessibility button to show "停用限时观看" after
+  the Kid TV Lock accessibility service is enabled.
+
+### Changed
+- Refresh Trellis Android development specs with source-backed project contracts
+  for app structure, state storage, error handling, logging, quality checks, and
+  HOME/accessibility behavior.
+
 ## [0.3.5] - 2026-06-18
 
 ### Fixed
