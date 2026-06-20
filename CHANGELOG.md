@@ -2,6 +2,14 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [Unreleased]
+
+## [0.3.7] - 2026-06-20
+
+### Added
+- Add an ADB post-install interface for provisioning an initial directional password
+  without overwriting an existing password.
+
 ## [0.3.6] - 2026-06-19
 
 ### Fixed
