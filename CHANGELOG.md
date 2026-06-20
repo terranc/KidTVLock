@@ -4,6 +4,12 @@ All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
 ## [Unreleased]
 
+## [0.3.8] - 2026-06-21
+
+### Changed
+- Update release title to "Kid TV Lock v{version}" format for GitHub releases
+- Update app icon
+
 ## [0.3.7] - 2026-06-20
 
 ### Added
