@@ -4,6 +4,12 @@ All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
 ## [Unreleased]
 
+## [0.3.9] - 2026-06-24
+
+### Added
+- Add a help QR entry on the guide screen that opens the usage guide on mobile,
+  with a TV-focused overlay, close control, and press-scale feedback.
+
 ## [0.3.8] - 2026-06-21
 
 ### Changed

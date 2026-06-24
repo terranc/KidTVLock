@@ -18,7 +18,8 @@ Android TV 家長控制應用，使用方向鍵密碼鎖定電視，防止孩子
 
 ## 使用方法
 
-1. 在 Android TV 或電視盒子上安裝 APK（不知道如何安裝應用？讓 [ChatGPT](https://chatgpt.com/?q=%E6%99%BA%E8%83%BD%E7%94%B5%E8%A7%86%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85%20APK) 指導你）
+1. 在 Android TV 或電視盒子上安裝 APK
+   - 需要安裝協助？使用 [安裝助手](https://tv.asdasd.vip/tools) 或讓 [ChatGPT](https://chatgpt.com/?q=%E6%99%BA%E8%83%BD%E7%94%B5%E8%A7%86%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%9D%20APK) 指導你
 2. 開啟應用，按照引導授予所需權限
 3. 使用遙控器方向鍵設定 6 位方向密碼
 4. 下次電視開機或喚醒時，將看到鎖定畫面——輸入密碼即可解鎖

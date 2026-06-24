@@ -17,7 +17,8 @@ An Android TV parental control app that locks the TV behind a directional-pad pa
 
 ## How It Works
 
-1. [Download the latest APK](https://github.com/terranc/KidTVLock/releases/latest) and install on your Android TV or TV box (not sure how? let [ChatGPT](https://chatgpt.com/?q=How%20to%20install%20APK%20on%20Android%20TV) guide you)
+1. [Download the latest APK](https://github.com/terranc/KidTVLock/releases/latest) and install on your Android TV or TV box
+   - Need help installing? Use the [安装助手](https://tv.asdasd.vip/tools) or let [ChatGPT](https://chatgpt.com/?q=How%20to%20install%20APK%20on%20Android%20TV) guide you
 2. Open the app and follow the setup guide to grant the necessary permissions
 3. Set a 6-directional passcode using the remote's D-pad
 4. The next time the TV boots or wakes, you'll see the lock screen — enter the passcode to unlock
