@@ -2,6 +2,19 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.4.1] - 2026-06-25
+
+### Changed
+- Debug builds now keep temporary passcode unlock durations aligned with release
+  semantics: 30-minute and 60-minute temporary passcodes no longer collapse to a
+  shortened debug duration.
+
+### Fixed
+- Added a debug-only Guide QR shortcut: pressing DPAD_DOWN five times on the phone
+  binding QR screen expires any active temporary unlock and shows a debug toast.
+- Fixed Guide help and Advanced Settings QR overlays so the Back key closes the
+  overlay instead of exiting to the TV launcher.
+
 ## [0.4.0] - 2026-06-24
 
 ### Added
