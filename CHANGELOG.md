@@ -2,7 +2,30 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
-## [Unreleased]
+## [0.4.0] - 2026-06-24
+
+### Added
+- Phone-based Advanced Settings: configure allowed apps and watch time rules by
+  scanning a QR code with your phone (same Wi-Fi/LAN required). The bilingual web
+  page supports English, 简体中文, and 繁體中文.
+- Restricted App Control: block disallowed apps during temporary unlock, forcing a
+  re-lock that requires the permanent password. Prevents children from bypassing
+  restrictions by opening unapproved apps.
+- Watch Time Scheduling: define weekly time windows (per day, with start/end time,
+  session duration, and daily session limits). TV auto-grants temporary unlock when
+  the current time falls within an active rule.
+- Usage Guide QR overlay: a "?" button on the guide screen opens a QR code linking
+  to the online usage guide, with translations in all supported languages.
+- Guide button flow layout: secondary buttons now wrap to the next line on narrow
+  screens, preventing text truncation.
+- ADB broadcast receiver for external provisioning of restricted app allowlists.
+
+### Changed
+- The "Enable limited viewing" accessibility button is now hidden entirely when the
+  accessibility service is already enabled (instead of toggling between Enable/Disable).
+- Lock screen triggered by a restricted-app violation hides the temporary passcode
+  option and redirects the BACK key to the launcher desktop.
+- Debug build temporary unlock duration changed from 2 minutes to 3 minutes.
 
 ## [0.3.9] - 2026-06-24
 

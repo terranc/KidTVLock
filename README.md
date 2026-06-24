@@ -13,6 +13,10 @@ An Android TV parental control app that locks the TV behind a directional-pad pa
 - **Password shake feedback** — a shake animation on wrong password entry gives clear visual feedback
 - **App update checking** — detects new versions and prompts for in-app download and installation
 - **QR code for phone binding** — scan a QR code with your phone to generate temporary unlock codes (30min or 60min)
+- **Phone-based Advanced Settings** — scan a QR code to configure allowed apps and watch time rules from your phone (same Wi-Fi required)
+- **Restricted App Control** — block disallowed apps during temporary unlock, preventing children from bypassing restrictions
+- **Watch Time Scheduling** — set weekly time windows for automatic temporary unlock, with session duration and daily limits
+- **Usage Guide QR** — quick-access "?" button on the guide screen shows a QR code linking to the online usage guide
 - **Setup guide** — walks you through the permission setup for reliable locking
 
 ## How It Works
