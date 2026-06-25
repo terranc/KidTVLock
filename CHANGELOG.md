@@ -2,6 +2,12 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.4.3] - 2026-06-25
+
+### Fixed
+- Automatically clear stale watch-time usage state when it no longer applies to
+  the current rule window or date, while keeping active break-period enforcement.
+
 ## [0.4.2] - 2026-06-25
 
 ### Changed
