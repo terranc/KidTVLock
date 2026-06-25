@@ -2,6 +2,12 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.4.2] - 2026-06-25
+
+### Changed
+- Watch time rules now require a break equal to the configured session length
+  before a child can start the next allowed session in the same time window.
+
 ## [0.4.1] - 2026-06-25
 
 ### Changed
