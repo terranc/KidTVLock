@@ -2,6 +2,14 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.4.4] - 2026-06-28
+
+### Fixed
+- Keep restricted-app violations locked when a blocked app immediately returns to
+  the foreground or HOME echoes back before the password page has stabilized.
+- Show a clear break-required prompt when watch-time rules deny access during the
+  required rest interval.
+
 ## [0.4.3] - 2026-06-25
 
 ### Fixed
