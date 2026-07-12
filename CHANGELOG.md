@@ -2,6 +2,14 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.1] - 2026-07-12
+
+### Fixed
+- During timed viewing, opening system Accessibility Settings triggers BACK
+  then HOME so children cannot turn off the accessibility service to bypass
+  app and schedule limits; re-entry must re-drill the submenu each time.
+- Parent password unlock sessions still allow opening Accessibility Settings.
+
 ## [0.5.0] - 2026-07-12
 
 ### Added
