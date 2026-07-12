@@ -2,6 +2,20 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.0] - 2026-07-12
+
+### Added
+- Show remaining timed viewing minutes when a temporary passcode or scheduled
+  viewing session unlocks, and again when the TV wakes during an unfinished
+  session.
+- Remind once about 3 minutes before a timed viewing session ends.
+- Unify in-app toasts with a 60% translucent black background for clearer TV
+  readability.
+
+### Changed
+- Keep permanent-password unlock silent; only timed viewing sessions announce
+  remaining time.
+
 ## [0.4.10] - 2026-07-12
 
 ### Added
