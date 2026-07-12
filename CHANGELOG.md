@@ -2,6 +2,26 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.4.10] - 2026-07-12
+
+### Added
+- Show a wake-only choice during an available viewing window so parents can use
+  the permanent password without consuming a child viewing session, while
+  password-free viewing starts the session only after confirmation.
+- Resume an unfinished child viewing session after the TV wakes without resetting
+  its remaining time or increasing the session count.
+
+### Changed
+- Simplify the wake choice copy and use equal option styling, with the full green
+  highlight following the currently focused button.
+
+## [0.4.8] - 2026-07-12
+
+### Fixed
+- Keep the permanent-password parent session active when a temporary passcode or
+  scheduled viewing session expires, preventing an incorrect automatic relock
+  during the current screen-on cycle.
+
 ## [0.4.7] - 2026-07-12
 
 ### Fixed
