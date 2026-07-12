@@ -2,6 +2,25 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.4.7] - 2026-07-12
+
+### Fixed
+- Check for app updates when an ADB-provisioned installation launches directly
+  into the QR guide screen for its initial password change.
+
+## [0.4.6] - 2026-07-03
+
+### Fixed
+- Include the accessibility HOME fallback mode in boot and screen-on relock
+  handling, while keeping the default HOME path prioritized on supported TVs.
+
+## [0.4.5] - 2026-07-02
+
+### Added
+- Add an accessibility HOME fallback mode for ROMs that reject third-party
+  default HOME apps, allowing the ADB installer to enable HOME-key lockscreen
+  relaunch after the user enables Kid TV Lock accessibility.
+
 ## [0.4.4] - 2026-06-28
 
 ### Fixed
