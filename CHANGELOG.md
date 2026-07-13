@@ -2,6 +2,18 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.2] - 2026-07-13
+
+### Changed
+- Timed viewing now pauses when the screen turns off so short breaks (for
+  example bathroom trips) do not burn remaining session time.
+- Resume unfinished remaining time if the wall clock since session start is
+  still within twice the single-session duration; past that grace, remaining
+  time is forfeited and rest is counted from the pause start (away time
+  credits toward rest).
+- Watching the full remaining quota after a pause still starts a normal rest
+  period from the moment the quota is used up.
+
 ## [0.5.1] - 2026-07-12
 
 ### Fixed
