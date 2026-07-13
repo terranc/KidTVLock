@@ -2,6 +2,22 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.3] - 2026-07-13
+
+### Fixed
+- Opening Kid TV Lock from the system app list and pressing Back no longer
+  unlocks the real desktop without a valid permanent, temporary, or timed
+  viewing grant.
+- While fully locked, third-party apps (including the real launcher and video
+  apps) are forced back to the lock screen; retries cover hand-speed races
+  against QuickLauncher.
+- Timed viewing expiry now reasserts the lock UI with the same force path, not
+  a single accessibility HOME only.
+
+### Added
+- Unlock and escape audit logs (`KidTvLockUnlock` / `ForceLockEnforcer`) for
+  adb diagnosis.
+
 ## [0.5.2] - 2026-07-13
 
 ### Changed
