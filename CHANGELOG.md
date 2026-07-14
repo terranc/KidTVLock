@@ -2,6 +2,16 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.4] - 2026-07-14
+
+### Fixed
+- Accessibility Settings are blocked with BACK then HOME even during a
+  permanent-password unlock session, so children cannot disable the service
+  after parent unlock.
+- After intentional permanent-password verification in the app (settings entry
+  or lock-screen permanent unlock), allow a 60-second window to open
+  Accessibility Settings for parent maintenance.
+
 ## [0.5.3] - 2026-07-13
 
 ### Fixed
