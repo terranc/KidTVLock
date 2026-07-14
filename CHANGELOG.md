@@ -2,6 +2,14 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.5] - 2026-07-14
+
+### Fixed
+- After a successful unlock, ForceLock no longer immediately treats the real
+  desktop as an escape: unlock prefs are written with `commit()`, and force
+  re-lock is suppressed for 2 seconds so DefaultHome is not thrashed into a
+  black screen.
+
 ## [0.5.4] - 2026-07-14
 
 ### Fixed
