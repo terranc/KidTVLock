@@ -2,6 +2,14 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.6] - 2026-07-21
+
+### Fixed
+- During a permanent-password parent unlock session, pressing HOME no longer
+  auto-starts a free timed viewing session or shows the timed-viewing toast.
+  Parent session outranks `WatchTimePolicy.grantIfAllowed` until screen-off
+  clears the wake-cycle session.
+
 ## [0.5.5] - 2026-07-14
 
 ### Fixed
