@@ -2,6 +2,16 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.7] - 2026-07-23
+
+### Changed
+- Repository hygiene: stop tracking local AI tooling (`.claude`, `.agents`,
+  `.codex`, `.omp`) and keep only `.trellis/spec` under version control.
+
+### Added
+- Promo documentation and screenshots under `docs/promo/`, plus updated
+  product icon and feedback image assets.
+
 ## [0.5.6] - 2026-07-21
 
 ### Fixed
