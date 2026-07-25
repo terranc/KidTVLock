@@ -2,6 +2,16 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.8] - 2026-07-25
+
+### Fixed
+- Advanced-settings QR code no longer picks up a secondary interface's
+  IPv4 (e.g. `p2p0` Wi-Fi Direct / Miracast) as the displayed URL on
+  multi-interface Android TV boxes. The URL now tracks the system's active
+  network, and both the primary and fallback selection paths now reject
+  known virtual interfaces (`p2p`, `ap`, `dummy`, `rmnet`).
+
+
 ## [0.5.7] - 2026-07-23
 
 ### Changed
