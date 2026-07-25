@@ -2,6 +2,13 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.10] - 2026-07-25
+
+### Fixed
+- Clear the parent unlock session when Hisense/VIDAA sends its early standby
+  notification, so the password screen is restored after wake even if the ROM
+  kills the app before the standard screen-off broadcast.
+
 ## [0.5.9] - 2026-07-25
 
 ## [0.5.8] - 2026-07-25
