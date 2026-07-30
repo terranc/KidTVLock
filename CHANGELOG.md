@@ -2,6 +2,13 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.11] - 2026-07-30
+
+### Fixed
+- While fully locked, accessibility key filtering consumes Home and App Switch
+  (including long-press Home) so the system Recents list cannot bypass the
+  password gate. Requires the Kid TV Lock accessibility service to be enabled.
+
 ## [0.5.10] - 2026-07-25
 
 ### Fixed
