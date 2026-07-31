@@ -2,6 +2,18 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.12] - 2026-07-31
+
+### Fixed
+- Restore the wake viewing-choice screen (watch now / enter password) when the TV
+  wakes within an allowed watch-time window on Hisense TVs. Three root causes were
+  addressed: accessibility HOME fallback intent was missing the wake-lock extra,
+  Hisense `prepare_standby` prematurely paused active watch sessions, and the
+  default-home launch path auto-granted viewing instead of showing the choice.
+- Detect accessibility service status via system settings after an APK update
+  restarts the app process, so the guide page no longer shows "enable limited
+  viewing" when the service is already enabled but not yet rebound.
+
 ## [0.5.11] - 2026-07-30
 
 ### Fixed
