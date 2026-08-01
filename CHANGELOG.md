@@ -2,6 +2,19 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.13] - 2026-08-01
+
+### Changed
+- Standby no longer freezes the watch quota immediately on any brand. Screen-off
+  now clears the parent unlock session right away (anti-bypass) and defers the
+  quota freeze by 1 second through a shared cancellable coordinator; waking within
+  that window (e.g. a mis-triggered power press) resumes the running watch session
+  untouched instead of pausing it. The Hisense/VIDAA `prepare_standby` special case
+  is generalized into a vendor early-standby signal: it still only clears the
+  parent session as a kill-process guard while the screen is interactive, and the
+  real screen-off event owns the delayed freeze. The temporary-unlock screen-off
+  path now shares the same delayed/cancellable freeze.
+
 ## [0.5.12] - 2026-07-31
 
 ### Fixed
