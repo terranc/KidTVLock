@@ -2,6 +2,24 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.17] - 2026-08-14
+
+### Added
+- Capture uncaught crashes during a diagnostic window: a new
+  `DiagnosticExceptionHandler` forwards uncaught exceptions to SLS (with a
+  synchronous urgent flush so the row leaves before the process dies), then
+  delegates to UMCrash / the system default handler.
+- Structured exception logging: `DiagnosticLogs.logWarn/logError(Throwable)` and
+  `logUncaught` format `event/thread/class/message/stack-trace`, scrubbed and
+  truncated to 3500 chars, and route through the new urgent flush channel
+  (`SlsLogSink.addUrgent`).
+- Enriched SLS diagnostic events for the home-setup flow: password-setup
+  branches (`already_configured` / `show_picker` / `auto_save`), default-home
+  open / confirm / pending-not-accepted, real-launcher save and provision, and
+  `LAUNCH_DESKTOP` success/failure with the resolved target component.
+- Emit a `DIAG_WINDOW_OPENED` event when the 3-day diagnostic window is enabled
+  (previously enabling it produced no SLS rows if the user stayed on the QR page).
+
 ## [0.5.16] - 2026-08-14
 
 ### Fixed
