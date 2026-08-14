@@ -2,6 +2,24 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.18] - 2026-08-14
+
+### Changed
+- Raise the Kid TV Lock HOME intent-filter priority to 1000 so it can compete
+  with vendor launchers that advertise a high HOME priority (Hisense VIDAA
+  Jamdeo uses 50). This is a trial against ROMs that ignore
+  `set-home-activity` while the vendor home stays enabled.
+
+### Fixed
+- Do not overwrite an already saved real launcher (for example Emotn UI
+  provisioned by the installer) with the current default HOME. On Hisense the
+  current default is often `com.jamdeo.tv.vod`, which previously replaced the
+  intended unlock desktop.
+- Recognize Hisense Jamdeo (`com.jamdeo.tv.vod`) as a known launcher when
+  resolving the original home.
+- Show a short Accessibility enable guide before opening system settings, so
+  parents know to turn on Kid TV Lock in Accessibility.
+
 ## [0.5.17] - 2026-08-14
 
 ### Added
