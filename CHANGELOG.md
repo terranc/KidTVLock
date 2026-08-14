@@ -2,6 +2,47 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.16] - 2026-08-14
+
+### Fixed
+- Seal two escape paths on the lock screen (verified on Hisense TV): long-pressing
+  HOME on the lock page could summon the app switcher to bypass the password, and
+  apps launched that way were exempt from the "watchable apps" whitelist.
+- Add `LockTaskController`: on Device Owner devices the unlock page now enters Lock
+  Task Mode so the system itself blocks HOME/RECENTS (the app layer cannot veto a
+  long HOME press). Non-DO devices stay a no-op and never call `startLockTask()`,
+  avoiding the un-reachable "app is pinned" confirmation dialog; those devices fall
+  back to `FullyLockedKeyGuard` + `ForceLockEnforcer`.
+- Lock page key handling is narrowed to BACK / d-pad / OK / power via a new
+  `LockedKeyWhitelist` decided in `dispatchKeyEvent` (previously decided later in
+  `onKeyDown` and only effective while the lock fragment held focus).
+- Drop the blanket `isSystemPackage` exemption in `RestrictedAppMonitor`: TV ROMs
+  ship video apps as system apps, which made the whitelist completely ineffective
+  during watch sessions.
+- Whitelist violations now route through `ForceLockEnforcer`'s forced eviction
+  (HOME + retry + force lock) instead of a single `GLOBAL_ACTION_HOME` that lost
+  the finger-speed race against restricted apps.
+
+## [0.5.15] - 2026-08-13
+
+### Added
+- Upload diagnostic logs to Aliyun SLS (Log Service): unlock/desktop-escape
+  audits, watch-time session events (start / pause / expire / resume), boot and
+  screen on/off events are now mirrored to the cloud console during a diagnostic
+  window, alongside the existing adb logcat trail.
+
+## [0.5.14] - 2026-08-13
+
+### Changed
+- Stop provisioning a default password during installation. Fresh installs no
+  longer ship with the `UUUUUU` password: first launch goes straight to the
+  QR-code screen without a password check, and the legacy initial-password
+  broadcast is now a compatibility no-op that never writes a password.
+- When no password is set yet, boot, screen-wake and HOME launches of KidTVLock
+  now enter the real desktop directly instead of showing the boot-password check
+  or the guide flow. Password setup only appears when the app is opened manually
+  from the app list.
+
 ## [0.5.13] - 2026-08-01
 
 ### Changed
