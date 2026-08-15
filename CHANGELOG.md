@@ -2,6 +2,14 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.19] - 2026-08-16
+
+### Added
+- When the diagnostic log window is open, phone-side Advanced Settings saves
+  (QR → mobile page → Save) upload a compact summary to Aliyun SLS: allowed-app
+  count/list and each watch rule (days, window, session length, max sessions).
+  Failed saves report a reason code for later audits.
+
 ## [0.5.18] - 2026-08-14
 
 ### Changed
