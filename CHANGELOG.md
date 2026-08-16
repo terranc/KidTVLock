@@ -2,6 +2,14 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.21] - 2026-08-16
+
+### Fixed
+- Set `setPersistentMaxLogCount` on the SLS log sink's binlog config so the
+  native `log_producer_config_is_valid` check passes and the CLIENT initializes
+  successfully (device-observed: diagnostics stopped uploading after the binlog
+  breakpoint-resume change).
+
 ## [0.5.20] - 2026-08-16
 
 ### Added
