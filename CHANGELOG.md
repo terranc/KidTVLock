@@ -2,6 +2,36 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [Unreleased]
+
+## [0.6.0] - 2026-08-16
+
+### Changed
+- 「可观看 APP」改为默认全选（opt-out）：家长只需取消不想给的应用。系统功能应用
+  不再出现在列表中；提交时由服务端合并。全新用户默认全开，老用户升级后原本能看
+  的应用（含当时靠系统预装自动放行的视频 App）保持可看，家长明确没勾的仍被限制。
+
+### Fixed
+- Temporary watch sessions now expire even when the vendor ROM disables this
+  app's static broadcast receivers. Delivery uses an in-process timer, an
+  `AlarmManager` wakeup into the resident foreground service, and the legacy
+  receiver as a fallback. Reboot rebuilds the deadline after accessibility
+  connects; the 3-minute reminder toasts only once.
+- Encrypted preference creation no longer caches a plaintext fallback, so a
+  one-off keystore failure at boot cannot disable locking for the whole process.
+- Saving "allow all apps" is no longer treated as unconfigured, so a stale
+  `/sdcard` backup cannot overwrite that decision.
+- Hidden diagnostic gesture now requires 6× DPAD_LEFT **within 10 seconds**.
+  Scattered left presses on the QR page no longer silently open a 3-day
+  log-upload window.
+- Add zh-Hans / zh-Hant strings for `diagnostic_logging_enabled` so Chinese
+  devices no longer toast in English.
+- Report `currentDefault=resolver` when `resolveActivity` returns the system
+  home chooser instead of treating `ResolverActivity` as a real launcher.
+- Remove the HOME intent-filter `android:priority="1000"` trial (already a
+  no-op for non-system apps; default HOME is decided by preferred activity /
+  RoleManager).
+
 ## [0.5.21] - 2026-08-16
 
 ### Fixed
