@@ -2,6 +2,25 @@
 
 All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
+## [0.5.20] - 2026-08-16
+
+### Added
+- Diagnostic-log scrub now masks by key on a targeted basis, and the SLS log
+  sink resumes binlog from the last breakpoint so crash logs are not lost when
+  an upload is interrupted.
+
+### Fixed
+- Unify the "watchable apps" selection list with the runtime restricted-app
+  violation check through a single `AppPolicyClassifier`, so the two can no
+  longer diverge (a preloaded system app could previously pass one gate while
+  failing the other).
+- Keep the default-home candidate alias always enabled so the installer's
+  `set-home-activity` provisioning no longer fails.
+
+### Security
+- Untrack `local.properties` and move the release signing password out of the
+  build script.
+
 ## [0.5.19] - 2026-08-16
 
 ### Added
