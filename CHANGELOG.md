@@ -4,6 +4,21 @@ All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-08-22
+
+### Fixed
+- 限时观看中按音量键不再误触发密码界面。违规判定宇宙改为「有启动入口的
+  应用」：无启动入口的系统组件（音量 OSD、输入法、通知宿主）只会因系统
+  行为冒到前台，不参与违规判定。2026-08-22 Sony BRAVIA 真机确诊（音量
+  弹窗宿主 com.sony.dtv.sonysystemservice 被判违规并作废观看会话），
+  豁免按平台结构信号判定，与品牌无关；查询失败或结果为空时按 fail-closed
+  交回白名单老行为，不因 PackageManager 抖动放行任意包。
+
+### Changed
+- 「可观看 APP」选择列表改为 LEANBACK / PHONE 两类启动入口的并集，
+  与运行时违规判定同源；被豁免的系统组件命中时记录
+  SYSTEM_COMPONENT_FOREGROUND 审计日志，便于真机观察。
+
 ## [0.6.0] - 2026-08-16
 
 ### Changed
