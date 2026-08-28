@@ -4,6 +4,15 @@ All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
 ## [Unreleased]
 
+## [0.6.2] - 2026-08-28
+
+### Fixed
+- 童视锁不是系统默认 HOME 时，完全锁定驱逐不再发送 `GLOBAL_ACTION_HOME`。
+  HOME 会把真实桌面（例如 Sony `com.oversea.aslauncher`）拉回前台，再被当成
+  逃逸，导致锁屏 / 观看选择页与桌面互抢，最后未操作遥控器也会进入桌面。
+  改为只强拉锁屏 Activity；同一条重试列车内的窗口风暴真正合并，不再每次
+  窗口变化都新开一列 HOME。2026-08-28 Sony BRAVIA 真机确诊并验证。
+
 ## [0.6.1] - 2026-08-22
 
 ### Fixed
