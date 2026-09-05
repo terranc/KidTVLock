@@ -4,6 +4,19 @@ All notable changes to 童视锁 (KidTvLock) are documented in this file.
 
 ## [Unreleased]
 
+## [0.6.3] - 2026-09-05
+
+### Added
+- 新安装的应用在系统首次安装后的 5 天内默认上报诊断日志至 SLS，无需 Debug
+  版本或手动触发。重启、升级和清除应用数据不会重新计时；满 5 天后停止接收
+  新日志，已有缓存继续补传。
+- 自动窗口与原有手动开启的 3 天诊断窗口独立生效，提前触发手势不会缩短
+  自动上报期；Debug 版本继续保持日志上报开启。
+
+### Fixed
+- 缩短无障碍 HOME 兜底控制器和广播接收器的日志标签，符合 Android 的
+  23 字符限制，消除 3 处 `LongLogTag` lint 错误。
+
 ## [0.6.2] - 2026-08-28
 
 ### Fixed
